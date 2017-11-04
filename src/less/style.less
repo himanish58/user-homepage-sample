@@ -1,3 +1,35 @@
+@primary-color: #208faa;
+@secondary-color: #27b7db;
+
 body {
-  background-color: blue;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+nav {
+
+  background-color: @primary-color;
+
+  .brand-logo {
+    font-size: 1.1rem;
+  }
+
+  .nav-wrapper {
+    .input-field {
+      input[type=search] {
+        background-color: @secondary-color;
+        box-shadow: none;
+        padding-left: 2rem;
+        margin-top: 10px;
+        height: 3rem;
+      }
+    }
+  }
+
+  #notifications {
+    position: relative;
+    right: 0;
+  }
+
 }
