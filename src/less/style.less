@@ -1,22 +1,25 @@
 @primary-color: #208faa;
 @secondary-color: #27b7db;
+@body-background: #f4f4f4;
+@left-sidebar-background: #ffffff;
 
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: @body-background;
 }
 
 nav {
 
   background-color: @primary-color;
-
   .brand-logo {
     font-size: 1.1rem;
   }
 
   .nav-wrapper {
     .input-field {
+      height: 0;
       input[type=search] {
         background-color: @secondary-color;
         box-shadow: none;
@@ -27,9 +30,57 @@ nav {
     }
   }
 
-  #notifications {
-    position: relative;
-    right: 0;
+}
+
+.row .col {
+  padding: 0;
+}
+
+.left-sidebar {
+  height: 100%;
+  background-color: red;
+  box-shadow: 1px 1px 5px;
+  position: relative;
+  background-color: @left-sidebar-background;
+
+  ul {
+    margin: 0;
+
+    .user-img {
+      background-image: url('/images/user-background.jpeg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 30vh;
+
+      .user-details {
+        position: absolute;
+        left: 4vh;
+        top: 4vh;
+
+        img {
+          height: 60px;
+          width: 60px;
+        }
+
+        .material-icons {
+          line-height: inherit;
+        }
+      }
+    }
+
+    .submenu {
+      margin: 20px;
+    }
+
+  }
+
+  .submenu-bottom {
+    margin: 20px;
+    span {
+      color: @primary-color;
+    }
   }
 
 }
