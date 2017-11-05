@@ -163,3 +163,25 @@ let pieChart6 = new Chart(pie6, {
 //   },
 // });
 // Tried to pul the chart at the bottom of the card but couldn't
+
+// Onclick Event for the left-sidebar
+
+let menu = document.querySelector('#menu');
+let middleTable = document.querySelector('#middle-table');
+let leftSideBar = document.querySelector('#left-sidebar');
+let leftNavToggle = (e) => {
+  e.preventDefault();
+  if (leftSideBar.style.display === 'none') {
+    middleTable.classList.remove('l10');
+    middleTable.classList.add('l8');
+    leftSideBar.style.display = 'block';
+    return true;
+  }
+
+  leftSideBar.style.transition = '2s';
+  leftSideBar.style.display = 'none';
+  middleTable.classList.remove('l8');
+  middleTable.classList.add('l10');
+};
+
+menu.addEventListener('click', leftNavToggle);
