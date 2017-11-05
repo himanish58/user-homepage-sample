@@ -32,7 +32,7 @@ nav .nav-wrapper .input-field input[type=search] {
   box-shadow: 1px 1px 2px;
   position: relative;
   background-color: #ffffff;
-  padding-bottom: 19px;
+  padding-bottom: 127px;
 }
 .left-sidebar ul {
   margin: 0;
@@ -117,7 +117,7 @@ nav .nav-wrapper .input-field input[type=search] {
   width: auto;
   background-color: #d8d8d8;
   padding: 20px;
-  padding-bottom: 0;
+  padding-bottom: 108px;
   box-shadow: 1px 1px 2px;
 }
 .right-sidebar img {
@@ -143,4 +143,8 @@ nav .nav-wrapper .input-field input[type=search] {
   background-color: #008748;
   margin-top: -5px;
   border-radius: 2px;
+}
+.pie {
+  height: 40px;
+  width: 40px;
 }
