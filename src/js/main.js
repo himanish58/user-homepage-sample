@@ -168,20 +168,35 @@ let pieChart6 = new Chart(pie6, {
 
 let menu = document.querySelector('#menu');
 let middleTable = document.querySelector('#middle-table');
-let leftSideBar = document.querySelector('#left-sidebar');
+let leftSideBar = document.querySelector('#leftSideBar');
+let flag = true;
 let leftNavToggle = (e) => {
-  e.preventDefault();
-  if (leftSideBar.style.display === 'none') {
-    middleTable.classList.remove('l10');
-    middleTable.classList.add('l8');
-    leftSideBar.style.display = 'block';
-    return true;
-  }
+    e.preventDefault();
+    if (window.screen.width > 992) {
+      if (leftSideBar.style.display === 'none') {
+        middleTable.classList.remove('l10');
+        middleTable.classList.add('l8');
+        leftSideBar.style.display = 'block';
+        return true;
+      }
 
-  leftSideBar.style.transition = '2s';
-  leftSideBar.style.display = 'none';
-  middleTable.classList.remove('l8');
-  middleTable.classList.add('l10');
-};
+      leftSideBar.style.transition = '2s';
+      leftSideBar.style.display = 'none';
+      middleTable.classList.remove('l8');
+      middleTable.classList.add('l10');
+    } else {
+      if (flag == false) {
+        leftSideBar.classList.remove('s12');
+        leftSideBar.classList.add('hide-on-med-and-down');
+        flag = true;
+        return true;
+      }
+
+      leftSideBar.classList.remove('hide-on-med-and-down');
+      leftSideBar.classList.add('s12');
+      flag = false;
+      return true;
+    }
+  };
 
 menu.addEventListener('click', leftNavToggle);
