@@ -13,6 +13,9 @@ nav {
 nav .brand-logo {
   font-size: 1.1rem;
 }
+nav .nav-wrapper {
+  margin-left: 20px;
+}
 nav .nav-wrapper .input-field {
   height: 0;
 }
@@ -29,6 +32,7 @@ nav .nav-wrapper .input-field input[type=search] {
   box-shadow: 1px 1px 2px;
   position: relative;
   background-color: #ffffff;
+  padding-bottom: 19px;
 }
 .left-sidebar ul {
   margin: 0;
@@ -93,6 +97,7 @@ nav .nav-wrapper .input-field input[type=search] {
 .main-table {
   margin: 20px;
   padding: 15px;
+  padding-bottom: 23px;
   background-color: #ffffff;
   height: auto;
   width: auto;
@@ -112,6 +117,7 @@ nav .nav-wrapper .input-field input[type=search] {
   width: auto;
   background-color: #d8d8d8;
   padding: 20px;
+  padding-bottom: 0;
   box-shadow: 1px 1px 2px;
 }
 .right-sidebar img {
@@ -137,8 +143,4 @@ nav .nav-wrapper .input-field input[type=search] {
   background-color: #008748;
   margin-top: -5px;
   border-radius: 2px;
-}
-.right-sidebar #radar {
-  width: auto;
-  height: 200px;
 }
