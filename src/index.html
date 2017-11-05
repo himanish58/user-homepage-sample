@@ -18,11 +18,11 @@
   <nav>
     <div class="nav-wrapper">
         <div class="row">
-          <div class="col l3">
+          <div class="col l3 s5">
             <a href="#"><i class="left material-icons">menu</i></a>
-            <a href="#" class="brand-logo"><strong>UNIKWAN</strong></a>
+            <a href="#"><strong>UNIKWAN</strong></a>
           </div>
-          <div class="col l6">
+          <div class="col l6 hide-on-med-and-down">
             <form>
               <div class="input-field">
                 <div class="search">
@@ -33,7 +33,7 @@
               </div>
             </form>
           </div>
-          <div class="col l1 offset-l2">
+          <div class="col l1 offset-l2 m2 offset-m5 s3 offset-s4 right">
             <ul>
               <li><a href="#"></a><i class="material-icons">notifications</i></li>
               <li><a href="#"></a><i class="material-icons">more_vert</i></li>
@@ -50,7 +50,7 @@
 
     <!-- Left sidebar Started -->
 
-    <div class="col l2">
+    <div class="col l2 hide-on-med-and-down">
       <div class="left-sidebar">
         <ul>
           <li>
@@ -87,21 +87,22 @@
 
     <!-- Middle Table Started -->
 
-    <div class="col l8">
+    <div class="col l8 m8">
       <div class="row">
-        <div class="col l4">
+        <div class="col l4 s12">
           <div class="card-panel grey-text text-darken-2">
             <h6><strong class="left">SALES</strong><div class="right" id="gross">gross</div></h6>
             <h5>$48,190 <span>This Week</span></h5>
+            <!-- <div class="card-chart"><canvas id="card1"></canvas></div> -->
           </div>
         </div>
-        <div class="col l4">
+        <div class="col l4 s12">
           <div class="card-panel grey-text text-darken-2">
             <h6><strong class="left">PAGE VIEWS</strong><i class="material-icons right">more_vert</i></h6>
             <h5>83,710 <span>This Month</span></h5>
           </div>
         </div>
-        <div class="col l4">
+        <div class="col l4 s12">
           <div class="card-panel grey-text text-darken-2">
             <h6><strong class="left">REPORTS</strong></h6>
             <h5>23,230 <span>Last Week</span><span class="right percentage green-text">8%<i class="material-icons">show_chart</i></span></h5>
@@ -109,7 +110,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col l12">
+        <div class="col s12">
           <div class="main-table">
             <h6 class="grey-text text-darken-2"><span class="left">INVOICES</span><a href="#" id="table-search" class="right grey-text text-darken-2">Search</a></h6>
             <table class="bordered highlight">
@@ -182,51 +183,61 @@
 
     <!-- Message Section Started -->
 
-    <div class="col l2">
+    <div class="col l2 m4 s12">
       <div class="right-sidebar">
         <h6 class="grey-text text-darken-3"><strong>NEW MESSAGES</strong></h6>
         <ul>
           <li>
             <div class="row">
-              <div class="col l4">
-                <img src="/images/user1.jpeg" alt="User Image One" class="circle">
-              </div>
-              <div class="col l8">
-                <h6 class="grey-text text-darken-4">Ned Flanders</h6>
-                <p class="grey-text text-darken-2">3 hours ago</p>
-              </div>
+              <a href="#">
+                <div class="col l4">
+                  <img src="/images/user1.jpeg" alt="User Image One" class="circle">
+                </div>
+                <div class="col l8">
+                  <h6 class="grey-text text-darken-4">Ned Flanders</h6>
+                  <p class="grey-text text-darken-2">3 hours ago</p>
+                </div>
+              </a>
             </div>
           </li>
           <li>
             <div class="row">
-              <div class="col l4">
-                <img src="/images/user2.jpeg" alt="User Image Two" class="circle">
-              </div>
-              <div class="col l8">
-                <h6 class="grey-text text-darken-4">Peter Griffin</h6>
-                <p class="grey-text text-darken-2">4 hours ago</p>
-              </div>
+              <a href="#">
+                <div class="col l4">
+                  <img src="/images/user2.jpeg" alt="User Image Two" class="circle">
+                </div>
+                <div class="col l8">
+                  <h6 class="grey-text text-darken-4">Peter Griffin</h6>
+                  <p class="grey-text text-darken-2">4 hours ago</p>
+                </div>
+              </a>
             </div>
           </li>
           <li>
             <div class="row">
-              <div class="col l4">
-                <img src="/images/user3.jpeg" alt="User Image Three" class="circle">
-              </div>
-              <div class="col l8">
-                <h6 class="grey-text text-darken-4">Lisa Simpson</h6>
-                <p class="grey-text text-darken-2">2 days ago</p>
-              </div>
+              <a href="#">
+                <div class="col l4">
+                  <img src="/images/user3.jpeg" alt="User Image Three" class="circle">
+                </div>
+                <div class="col l8">
+                  <h6 class="grey-text text-darken-4">Lisa Simpson</h6>
+                  <p class="grey-text text-darken-2">2 days ago</p>
+                </div>
+              </a>
             </div>
           </li>
         </ul>
         <h6 class="grey-text text-darken-3"><strong>EVENTS</strong></h6>
         <ul class="events">
           <li>
-            <h6 class="grey-text text-darken-3">Team Scrum <span class="notification-count right">12</span></h6>
+            <a href="#">
+              <h6 class="grey-text text-darken-3">Team Scrum <span class="notification-count right">12</span></h6>
+            </a>
           </li>
           <li>
-            <h6 class="grey-text text-darken-3">Google I/O</h6>
+            <a href="#">
+              <h6 class="grey-text text-darken-3">Google I/O</h6>
+            </a>
           </li>
           <li>
             <h6 class="grey-text">No more events sceduled</h6>

@@ -144,7 +144,16 @@ nav .nav-wrapper .input-field input[type=search] {
   margin-top: -5px;
   border-radius: 2px;
 }
+.right-sidebar li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .pie {
   height: 40px;
   width: 40px;
+}
+@media screen and (max-width: 680px) {
+  .main-table {
+    margin: 0;
+    padding: 5px;
+  }
 }

@@ -27,7 +27,7 @@ let rightSideChart = new Chart(radarChart, {
     tooltips: {
       enabled: false,
     },
-    
+
     // responsive: true,
     // maintainAspectRatio: false,
   },
@@ -142,3 +142,24 @@ let pieChart6 = new Chart(pie6, {
     maintainAspectRatio: true,
   },
 });
+
+// Card Charts
+
+// First Card
+// let card1 = document.querySelector('#card1').getContext('2d');
+// let cardData1 = {
+//   datasets: [{
+//     backgroundColor: 'rgba(0, 0, 0, 0.3)',
+//     data: [72, 25, 15, 89, 25, 48, 75],
+//   },
+// ],
+// };
+// let cardChart1 = new Chart(card1, {
+//   type: 'bar',
+//   data: cardData1,
+//   options: {
+//     responsive: true,
+//     maintainAspectRatio: false,
+//   },
+// });
+// Tried to pul the chart at the bottom of the card but couldn't

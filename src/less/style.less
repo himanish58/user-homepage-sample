@@ -105,6 +105,16 @@ nav {
 
 .card-panel {
   margin: 20px;
+  // position: relative;
+  //
+  // .card-chart {
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   height: 30px;
+  //   width: auto;
+  //   background-color: red;
+  // }
 
   #gross {
     padding: 5px;
@@ -193,13 +203,21 @@ nav {
       }
     }
   }
-  // #radarChart {
-  //   width: auto;
-  //   height: auto;
-  // }
+  li:hover {
+      background-color: rgba(0,0,0,0.2);
+  }
 }
 
 .pie {
   height: 40px;
   width: 40px;
+}
+
+// Media Queries
+
+@media screen and (max-width: 680px) {
+  .main-table {
+    margin: 0;
+    padding: 5px;
+  }
 }
