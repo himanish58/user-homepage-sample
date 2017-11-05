@@ -2,8 +2,10 @@
 @secondary-color: #27b7db;
 @body-background: #f4f4f4;
 @left-sidebar-background: #ffffff;
-@right-sidebar-background: #c6c6c6;
+@right-sidebar-background: #d8d8d8;
 @box-shadow-default: 1px 1px 2px;
+@img-height: 50px;
+@img-width: 50px;
 
 // Default styling
 
@@ -53,9 +55,10 @@ nav {
 
   ul {
     margin: 0;
+    }
 
     .user-img {
-      background-image: url('/images/user-background.jpeg');
+      background-image: url('/images/user-background.png');
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -68,8 +71,8 @@ nav {
         top: 20px;
 
         img {
-          height: 60px;
-          width: 60px;
+          height: @img-height;
+          width: @img-width;
         }
 
         .material-icons {
@@ -80,6 +83,9 @@ nav {
 
     .submenu {
       margin: 20px;
+      &:hover {
+        background-color: @body-background;
+      }
     }
 
   }
@@ -91,7 +97,7 @@ nav {
     }
   }
 
-}
+
 
 // Middle table styling
 
@@ -100,7 +106,7 @@ nav {
 
   #gross {
     padding: 5px;
-    background-color: @primary-color;
+    background-color: @secondary-color;
     color: @left-sidebar-background;
     border-radius: 2px;
     display: inline-block;
@@ -144,6 +150,7 @@ nav {
   tbody>tr:last-child {
     border: none;
   }
+
 }
 
 
@@ -155,4 +162,36 @@ nav {
   background-color: @right-sidebar-background;
   padding: 20px;
   box-shadow: @box-shadow-default;
+
+  img {
+    height: @img-height;
+    width: @img-width;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+  }
+
+  .events {
+    margin-top: 30px;
+    li {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #a8a8a8;
+      .notification-count {
+        padding: 5px;
+        color: @body-background;
+        background-color: #008748;
+        margin-top: -5px;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  #radar{
+    width: auto;
+    height: 200px;
+  }
 }
