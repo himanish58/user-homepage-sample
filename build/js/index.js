@@ -1,0 +1,1 @@
+let username=document.querySelector('#username'),password=document.querySelector('#password'),login=document.querySelector('form'),user={username:'himanish58',password:'1234'};function validateForm(){return username.value===user.username&&password.value===user.password||(alert('Please enter a valid username and password'),!1)}

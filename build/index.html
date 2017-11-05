@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Unikwan User Login page</title>
+  <!-- Material Icons CDN -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Material CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!-- External CSS link -->
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+  <div class="login">
+    <h3>Login Page</h3>
+    <form action="/homepage.html" onsubmit="return validateForm()">
+      <div class="input-field">
+        <input type="text" id="username" class="validate" required>
+        <label for="username">Username</label>
+      </div>
+      <div class="input-field">
+        <input type="password" id="password" class="validate" required>
+        <label for="password">Password</label>
+      </div>
+        <input class="btn waves-effect waves-light" type="submit" id="loginButton" name="action">
+    </form>
+    </div>
+
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <!-- Materialize JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- External JS -->
+  <script src="/js/index.js"></script>
+</body>
+</html>
