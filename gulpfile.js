@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const less = require('gulp-less');
-const cleanCSS = require('gulp-clean-css');
+const cssmin = require('gulp-cssmin');
 const imagemin = require('gulp-imagemin');
 const minify = require('gulp-babel-minify');
 
@@ -10,9 +10,9 @@ gulp.task('less', function () {
   .pipe(gulp.dest('src/css'));
 });
 
-gulp.task('cleanCSS', function () {
+gulp.task('cssmin', function () {
   gulp.src('src/css/*')
-  .pipe(cleanCSS())
+  .pipe(cssmin())
   .pipe(gulp.dest('build/css'));
 });
 
@@ -29,11 +29,11 @@ gulp.task('imagemin', function () {
 });
 
 gulp.task('copyHTML', function () {
-  gulp.src('src/*.html')
+  gulp.src('src/*')
   .pipe(gulp.dest('build'));
 });
 
-gulp.task('default', ['less', 'minify', 'imagemin', 'cleanCSS', 'copyHTML']);
+gulp.task('default', ['less', 'minify', 'imagemin', 'cssmin', 'copyHTML']);
 
 gulp.task('watch', function () {
   gulp.watch('src/less/*.less', ['less']);
